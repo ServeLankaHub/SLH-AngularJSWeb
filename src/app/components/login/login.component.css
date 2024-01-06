@@ -19,14 +19,20 @@ img {
     margin: 0
 }
 
-input[type=text],
+input[type=email],
 select,
 textarea {
 
     margin-top: 6px;
     margin-bottom: 16px;
+}
 
+input[type=password],
+select,
+textarea {
 
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
 
 label {

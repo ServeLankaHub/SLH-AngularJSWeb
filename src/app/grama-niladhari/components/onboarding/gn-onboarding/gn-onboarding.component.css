@@ -36,8 +36,22 @@ textarea {
 
     margin-top: 6px;
     margin-bottom: 16px;
+}
 
+input[type=email],
+select,
+textarea {
 
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=date],
+select,
+textarea {
+
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
 
 label {
