@@ -2,9 +2,27 @@
     background-color: rgba(0, 83, 78, 1);
 }
 
-.reg-form {
+h1 {
+    justify-content: flex-start;
+    margin-left: 130px;
+    font-size: 24px;
+}
+
+p {
+    justify-content: flex-start;
+    margin-left: 130px;
+}
+
+.onboard-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.reg-form {
+
+    justify-content: flex-start;
+    margin-left: 130px;
+    width: 608px;
 
 }
 

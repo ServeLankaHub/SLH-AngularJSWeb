@@ -11,6 +11,8 @@ export class IconComponent {
   @Input() height: string = '24';
   @Input() color: string = 'black';
 
+  ngOnInit() {
 
+  }
 
 }
