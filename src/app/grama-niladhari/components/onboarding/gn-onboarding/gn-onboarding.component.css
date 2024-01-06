@@ -26,6 +26,10 @@ p {
 
 }
 
+.col {
+    margin-right: 72px;
+}
+
 input[type=text],
 select,
 textarea {
