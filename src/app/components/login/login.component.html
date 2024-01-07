@@ -10,10 +10,17 @@
         <div class="card-body">
             <h5 class="card-title">Login</h5>
             <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-                <label for="email">Email</label>
+                <div>
+                    <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
-                <label for="password">Password</label>
+                </div>
+                <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email is required</small>
+                <div>
+                    <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+                </div>
+                
+                <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</small>
                 <p>Forget Password?</p>
                 <button type="button" class="btn-cancel btn">Cancel</button>
                 <button type="submit" class="btn-login btn">Login</button>

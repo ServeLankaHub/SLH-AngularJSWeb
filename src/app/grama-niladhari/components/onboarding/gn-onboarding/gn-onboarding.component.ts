@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   templateUrl: './gn-onboarding.component.html',
   styleUrl: './gn-onboarding.component.css'
 })
-export class GnOnboardingComponent {
+export class GnOnboardingComponent implements OnInit {
+
+  onboardForm!:FormGroup
+  
+  constructor() {}
+  ngOnInit(): void {
+    
+  }
+
+  onBoardSumbit(){
+
+  }
 
 }
