@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -10,9 +10,22 @@ import { FormGroup } from '@angular/forms';
 export class GnOnboardingComponent implements OnInit {
 
   onboardForm!:FormGroup
-  
-  constructor() {}
+
+  constructor(private fb:FormBuilder) {}
   ngOnInit(): void {
+    this.onboardForm =  this.fb.group({
+      gnId:['', Validators.required],
+      divisionId:['', Validators.required],
+      firstName:['', Validators.required],
+      lastName:['', Validators.required],
+      email:['', [Validators.required, Validators.email]],
+      address:['', Validators.required],
+      mobileNumber:['', Validators.required],
+      officeAddress:['', Validators.required],
+      dateOfBirth:['', Validators.required],
+      joinedDate:['', Validators.required],
+
+    })
     
   }
 

@@ -35,7 +35,7 @@ select,
 textarea {
 
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 input[type=email],
@@ -43,7 +43,7 @@ select,
 textarea {
 
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 input[type=date],
@@ -51,7 +51,7 @@ select,
 textarea {
 
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 }
 
 label {
@@ -87,4 +87,10 @@ nav {
 
     cursor: pointer;
 
+}
+small{
+    color: rgb(141, 28, 51);
+    margin-bottom: 5px;
+    font-size: 12px;
+    
 }
