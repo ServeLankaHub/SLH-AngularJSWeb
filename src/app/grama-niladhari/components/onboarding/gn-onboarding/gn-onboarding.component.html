@@ -117,16 +117,16 @@
                     <form [formGroup]="onboardForm" (ngSubmit)="onBoardSumbit()">
                         <div class="row">
                             <div class="col">
-                                <label for="gnId">Grama Niladhari ID</label>
-                                <input type="text" class="form-control" id="gnId" placeholder="Grama Niladhari ID" formControlName="gnId">
-                                <small *ngIf="onboardForm.controls['gnId'].dirty && onboardForm.hasError('required','gnId')">*Grama Niladhari ID is required</small>
+                                <label for="GN_ID">Grama Niladhari ID</label>
+                                <input type="text" class="form-control" id="GN_ID" placeholder="Grama Niladhari ID" formControlName="GN_ID">
+                                <small *ngIf="onboardForm.controls['GN_ID'].dirty && onboardForm.hasError('required','GN_ID')">*Grama Niladhari ID is required</small>
                             </div>
                             
-                            <div class="col">
+                            <!-- <div class="col">
                                 <label for="divisionId">Division ID</label>
                                 <input type="text" class="form-control" id="divisionId" placeholder="Division ID" formControlName="divisionId">
                                 <small *ngIf="onboardForm.controls['divisionId'].dirty && onboardForm.hasError('required','divisionId')">*Division ID is required</small>
-                            </div>
+                            </div> -->
                         </div>
                         
                         <div class="row">
@@ -173,9 +173,9 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label for="dob">Date Of Birth</label>
-                                <input type="date" class="form-control" id="dob" placeholder="Date Of Birth" formControlName="dateOfBirth">
-                                <small *ngIf="onboardForm.controls['dateOfBirth'].dirty && onboardForm.hasError('required','dateOfBirth')">*Date Of Birth is required</small>
+                                <label for="dateofBirth">Date Of Birth</label>
+                                <input type="date" class="form-control" id="dateofBirth" placeholder="Date Of Birth" formControlName="dateofBirth">
+                                <small *ngIf="onboardForm.controls['dateofBirth'].dirty && onboardForm.hasError('required','dateofBirth')">*Date Of Birth is required</small>
                             </div>
                             <div class="col">
                                 <label for="joinedDate">Joined Date</label>
