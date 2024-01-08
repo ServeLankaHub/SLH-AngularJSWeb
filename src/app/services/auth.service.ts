@@ -6,7 +6,11 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-private baseUrl:string = "";
-constructor() { }
+private baseUrl:string = "https://localhost:7102/api/GramaNiladhari";
+constructor(private http:HttpClient, private router:Router) { }
+
+login(loginObj:any){
+  return this.http.post<any>(`${this.baseUrl}login`,loginObj);
+}
 
 }
