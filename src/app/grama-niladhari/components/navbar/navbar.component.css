@@ -9,6 +9,9 @@
     margin-right: 10px;
     
 }
+.navbar {
+    border-bottom: 1px solid rgba(0, 83, 78, 1);
+  }
 #basic-addon2{
     height: 35px;
     width:65px;
@@ -16,4 +19,12 @@
 h5{
     font-size: 20px;
     margin-left: 10px;
+}
+.board-container{
+    background-color: rgba(0, 83, 78,8%);
+    width: 100%;
+    height: 100vh;
+}
+.col{
+    margin-top: 20px;
 }
