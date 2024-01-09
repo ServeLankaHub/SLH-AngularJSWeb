@@ -1,15 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+    <a class="navbar-brand" href="#">
+      <button type="button" class="btn btn-icon"> <fa-icon [icon]="faAlignLeft" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon>
+      </button></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-     
+      <div class="input-group  w-25 h-25">
+        <input type="text" class="form-control h-25" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2"><button type="button" class="btn btn-icon"> <fa-icon [icon]="faSearch" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon>
+        </button></span>
+      </div>
+     <h5>Services</h5>
+     <button type="button" class="btn btn-icon"> <fa-icon [icon]="faAngleDown" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon>
+     </button>
     </div>
     <div class="">
       <button type="button" class="btn btn-icon"> <fa-icon [icon]="faGlobe" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon>
