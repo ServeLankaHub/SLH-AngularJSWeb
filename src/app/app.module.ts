@@ -10,13 +10,14 @@ import { NgToastModule } from 'ng-angular-popup';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgToastModule
+    NgToastModule,
+    
   ],
   providers: [
     provideHttpClient(withFetch()),
@@ -24,4 +25,7 @@ import { NgToastModule } from 'ng-angular-popup';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+  
+ }

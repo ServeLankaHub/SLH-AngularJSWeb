@@ -1,0 +1,11 @@
+.btn-icon{
+    border: none;
+    border-color: rgba(0, 83, 78, 1);
+    margin-right: 10px;
+}
+.btn-user{
+    border-radius: 60px;
+    border-color: rgba(0, 83, 78, 1);
+    margin-right: 10px;
+    
+}
