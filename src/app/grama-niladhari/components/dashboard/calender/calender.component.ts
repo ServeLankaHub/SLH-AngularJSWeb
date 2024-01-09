@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-calender',
   templateUrl: './calender.component.html',
@@ -7,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalenderComponent implements OnInit {
   
-
   constructor() { }
 
   ngOnInit() {

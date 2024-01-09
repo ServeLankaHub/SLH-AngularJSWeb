@@ -1,4 +1,7 @@
 .demo-inline-calendar-card {
     width: 300px;
   }
-  
+.header{
+  font-size: 20px;
+  color: rgb(0,83,78);
+}  

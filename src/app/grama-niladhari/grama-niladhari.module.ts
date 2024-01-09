@@ -12,6 +12,9 @@ import { CalenderComponent } from './components/dashboard/calender/calender.comp
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
+import { AppoinmentsComponent } from './components/dashboard/appoinments/appoinments.component';
+import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import {MatCardModule} from '@angular/material/card';
     GnOnboardingComponent,
     IconComponent,
     NavbarComponent,
-    CalenderComponent
+    CalenderComponent,
+    AppoinmentsComponent,
+    DailyFeedComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +33,8 @@ import {MatCardModule} from '@angular/material/card';
     FontAwesomeModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+   
     
   ]
 })
