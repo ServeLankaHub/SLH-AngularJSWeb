@@ -6,25 +6,8 @@ h5{
   font-size: 20px;
   color: rgb(0,83,78);
 }
-.calender{
+
+.card{
   height: 355px;
-}
-/* Media Query for small screens (max-width: 767px) */
-@media (max-width: 767px) {
-  .card {
-      max-width: 100%;
-      height: auto;
-  }
-
-  h5 {
-      font-size: 18px; 
-  }
-
-  h6 {
-      font-size: 14px; 
-  }
-
-  .card-text {
-      font-size: 12px; 
-  }
+  width:100%;
 }
