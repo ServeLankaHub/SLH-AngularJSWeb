@@ -6,9 +6,12 @@ h5{
 .card{
   height: 375px;
   overflow-y: scroll;
+  
 }
 
+
 body{margin-top:20px;
+    
 }
 
 .timeline {
@@ -24,12 +27,7 @@ body{margin-top:20px;
     padding: 50px;
     list-style: none;
     text-align: left;
-    /* height: 250px;
-    width:250px;
-    display:flex;
-    justify-content: center;
-    align-items: center; */
-    /* max-width: 40%; */
+   
    
 }
 
@@ -131,4 +129,28 @@ body{margin-top:20px;
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+
+    .timeline {
+        padding: 10px; 
+    }
+
+    .timeline .event {
+        padding-top: 15px; 
+    }
+
+    .timeline .event:before {
+        left: 0;
+        text-align: left;
+        margin-bottom: 10px; 
+    }
+
+    .timeline .event:after {
+        left: -31.8px;
+    }
 }

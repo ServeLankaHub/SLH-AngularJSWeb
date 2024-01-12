@@ -37,3 +37,14 @@ h5{
     font-size: 14px;
     
   }
+  @media (max-width: 767px) {
+    .card {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    img {
+        width: 100%; 
+        border-radius: 0; 
+    }
+}
