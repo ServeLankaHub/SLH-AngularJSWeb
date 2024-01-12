@@ -35,3 +35,14 @@ h5{
 .app-appoinments{
     margin-bottom: 20px;
 }
+
+ /* For mobile phone */
+ @media only screen and  (max-width: 400px) {
+    .card{
+      width: 100%;
+    }
+    .col{
+        width:100%
+    }
+
+}
