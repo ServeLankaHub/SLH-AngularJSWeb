@@ -14,6 +14,8 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 import { AppoinmentsComponent } from './components/dashboard/appoinments/appoinments.component';
 import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed
     NavbarComponent,
     CalenderComponent,
     AppoinmentsComponent,
-    DailyFeedComponent
+    DailyFeedComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
