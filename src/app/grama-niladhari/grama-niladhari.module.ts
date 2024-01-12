@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AppoinmentsComponent } from './components/dashboard/appoinments/appoinments.component';
 import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
 
 
 
@@ -27,7 +28,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CalenderComponent,
     AppoinmentsComponent,
     DailyFeedComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
