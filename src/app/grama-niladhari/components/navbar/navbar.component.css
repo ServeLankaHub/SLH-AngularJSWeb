@@ -44,5 +44,7 @@ h5{
     .col{
         width:100%
     }
-
+    .app-calender{
+        display:none;
+}
 }
