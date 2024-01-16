@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
       next:(res)=>{
         this.toast.success({detail:"Success!",summary:res.message,duration:5000})
         this.loginForm.reset();
-        
+        this.router.navigate(['grama-niladhari/home'])
       },
       error:(err)=>{
         this.toast.error({detail:"Error!", summary:"Something went wrong!",duration:5000})
