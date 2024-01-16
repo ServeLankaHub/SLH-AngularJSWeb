@@ -100,4 +100,8 @@ small{
     .sidebar{
         display:none;
 }
+
+.navbar-content{
+    width: 400px;;
+}
 }

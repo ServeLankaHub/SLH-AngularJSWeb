@@ -11,3 +11,12 @@ h5{
   height: 355px;
   width:100%;
 }
+ .calendar{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+}
+

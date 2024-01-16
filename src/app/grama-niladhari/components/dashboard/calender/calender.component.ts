@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import flatpickr from 'flatpickr';
 
 
 
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './calender.component.html',
   styleUrls: ['./calender.component.css']
 })
-export class CalenderComponent implements OnInit {
+export class CalenderComponent implements AfterViewInit {
   
+  @ViewChild('calendar') calendar!:ElementRef;
+
   constructor() { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    if (typeof window !== 'undefined') {
+      flatpickr(this.calendar.nativeElement, {
+        dateFormat: 'Y-m-d',
+        inline: true,
+      });
   }
 
+  }
 }
