@@ -34,9 +34,15 @@ h5{
 }
 .app-calender{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .app-appoinments{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=text],

@@ -8,8 +8,9 @@ h5{
 }
 
 .card{
-  height: 355px;
-  width:100%;
+  height: 400px;
+  width:400px;
+  
 }
  .calendar{
   justify-content: center;
