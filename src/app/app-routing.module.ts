@@ -4,7 +4,8 @@ import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: 'grama-niladhari', loadChildren: () => import('./grama-niladhari/grama-niladhari.module').then(m => m.GramaNiladhariModule) },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '', component:LoginComponent}
 ];
 
 @NgModule({

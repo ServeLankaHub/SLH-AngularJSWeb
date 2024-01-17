@@ -18,6 +18,12 @@ img {
     height: 100vh;
     margin: 0
 }
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 
 input[type=email],
 select,
@@ -63,8 +69,8 @@ p {
     color: rgba(0, 83, 78, 1);
     font-size: 14px;
     border-color: rgba(0, 83, 78, 1);
-    margin-right: 127px;
     margin-bottom: 6px;
+    margin-right: 40px;
 
 }
 
