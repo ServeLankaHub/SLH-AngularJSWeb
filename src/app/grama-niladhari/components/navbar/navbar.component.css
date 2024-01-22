@@ -11,6 +11,8 @@
 }
 .navbar {
     border-bottom: 1px solid rgba(0, 83, 78, 1);
+    /* width: 100%; */
+   
   }
   .input-group{
     width:350px;
@@ -22,11 +24,7 @@ h5{
     font-size: 20px;
     margin-left: 10px;
 }
-.board-container{
-    background-color: rgba(0, 83, 78,8%);
-    width: 100%;
-    height: 950px;
-}
+
 .col{
     margin-top: 20px;
     
@@ -43,6 +41,9 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.daily-feed{
+    margin-left: 40px;
 }
 
 input[type=text],
@@ -81,6 +82,12 @@ form ::placeholder {
     }
     .app-footer{
     display:none;
+    }
+    .daily-feed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
     }
 }
 

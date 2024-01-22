@@ -1,16 +1,17 @@
 .sidebar {
-    /* background-color: rgba(0, 83, 78, 1); */
-    height: 100vh;
+    background-color: rgba(0, 83, 78, 1);
+    /* height: 1024px;
+    width:395px; */
 }
 p {
     justify-content: flex-start;
     margin-left: 130px;
 }
 
-.onboard-content {
+/* .onboard-content {
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 .reg-form {
 
@@ -21,7 +22,8 @@ p {
 }
 
 .navbar-content{
-    width: 1278px;
+    /* width: 1045px; */
+    /* padding-left: 1px; */
 }
 
 input[type=text],
@@ -75,7 +77,7 @@ form ::placeholder {
 }
 
 nav {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .bellImg {
@@ -99,13 +101,17 @@ small{
 h1 {
     font-size: 20px;
     margin-top: 10px;
-    color: rgba(0, 83, 78, 1);
+    color: #ffff;
 }
 img{
     margin-right: 10px;
     width: 60px;
     height: 60px;
     border-radius: 20px;
+}
+.svg-icon{
+    width:24px;
+    height: 24px;
 }
 
 /* For mobile phone */

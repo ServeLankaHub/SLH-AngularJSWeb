@@ -3,23 +3,16 @@ h5{
     color: rgb(0,83,78);
   }  
 
-.card{
-  height: 430px;
-  width:400px;
- 
-  
-}
 .appoinment-content{
     overflow-y: scroll;
     margin-left: 40px;
-   
-
+}
+.card{
+    margin-top: 20px;
+    height: 460px;
 }
 
 
-body{margin-top:20px;
-    
-}
 
 .timeline {
     border-left: 3px solid rgb(0,83,78);

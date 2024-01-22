@@ -16,6 +16,7 @@ import { AppoinmentsComponent } from './components/dashboard/appoinments/appoinm
 import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
+import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 
 
 
@@ -29,7 +30,8 @@ import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar
     AppoinmentsComponent,
     DailyFeedComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    GnDashboardComponent
   ],
   imports: [
     CommonModule,
