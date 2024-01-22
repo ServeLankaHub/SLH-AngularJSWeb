@@ -18,7 +18,7 @@ export class CalenderComponent implements AfterViewInit {
     if (typeof window !== 'undefined') {
       flatpickr(this.calendar.nativeElement, {
         dateFormat: 'Y-m-d',
-        inline: true,
+        inline:true
       });
   }
 
