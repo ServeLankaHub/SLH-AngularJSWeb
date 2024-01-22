@@ -24,28 +24,6 @@ h5{
     font-size: 20px;
     margin-left: 10px;
 }
-
-.col{
-    margin-top: 20px;
-    
-    
-}
-.app-calender{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.app-appoinments{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.daily-feed{
-    margin-left: 40px;
-}
-
 input[type=text],
 select,
 textarea {
