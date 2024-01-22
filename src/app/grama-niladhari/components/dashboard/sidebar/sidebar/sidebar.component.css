@@ -1,7 +1,6 @@
 .sidebar {
     background-color: rgba(0, 83, 78, 1);
-    /* height: 1024px;
-    width:395px; */
+   height: 100vh;
 }
 p {
     justify-content: flex-start;
