@@ -17,6 +17,7 @@ import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
+import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
 
 
 
@@ -31,7 +32,8 @@ import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-das
     DailyFeedComponent,
     FooterComponent,
     SidebarComponent,
-    GnDashboardComponent
+    GnDashboardComponent,
+    MakeAnAppointmentComponent
   ],
   imports: [
     CommonModule,

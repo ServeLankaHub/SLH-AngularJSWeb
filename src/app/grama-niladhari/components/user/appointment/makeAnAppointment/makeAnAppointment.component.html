@@ -1,0 +1,82 @@
+<app-navbar></app-navbar>
+<h2>Make An Appointment</h2>
+<div class="content">
+  <p>By filling out the form , you automatically make an appointment with a Grama Nildhari.A reminder wil be send to the specified contact</p>
+</div>
+<div class="form-content">
+  <div class="row justify-content-center">
+   <div class="col-3">
+      <h5>General Information</h5>
+    </div>
+    <div class="col-3">
+     <h5>Personal Information</h5>
+    </div>
+  </div>
+  <form [formGroup]="appointmentForm">
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Division Id</label>
+          <input type="text" class="form-control" id="divisionId" placeholder="Division Id" formControlName="divisionId">
+          <small *ngIf="appointmentForm.controls['divisionId'].dirty && appointmentForm.hasError('required','divisionId')">*Division ID is required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Date</label>
+          <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Date" formControlName="date">
+          <small *ngIf="appointmentForm.controls['date'].dirty && appointmentForm.hasError('required','date')">*Date is required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Reason for visit</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Type the Reason" formControlName="reason">
+          <small *ngIf="appointmentForm.controls['reason'].dirty && appointmentForm.hasError('required','reason')">*Reason is required</small>
+        </div>
+       </div>
+       <div class="col-3">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">NIC</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="National Identity Card No" formControlName="NIC">
+          <small *ngIf="appointmentForm.controls['NIC'].dirty && appointmentForm.hasError('required','NIC')">*National Identity Card No is required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" formControlName="fullName">
+          <small *ngIf="appointmentForm.controls['fullName'].dirty && appointmentForm.hasError('required','fullName')">*Full Name is required</small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Contact Details</label>
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button">Phone</button>
+            <button class="btn btn-outline-secondary" type="button">Email</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+          </div>
+        </div>
+       </div>
+       <div class="row justify-content-center">
+        <div class="col-3"></div>
+         <div class="col-3">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+         </div>
+       </div>
+     </div>
+  <div class="content">
+    <div class="col-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          I have read and agree with website Privacy and Policy.
+        </label>
+      </div>
+     </div>
+  </div>
+  <div class="content">
+    <div class="row row-cols-2">
+      <div class="col"> <button type="button" class="btn-cancel btn">Cancel</button></div>
+      <div class="col"><button type="submit" class="btn-login btn">Confirm</button></div>
+    </div>
+  </div>
+</form> 
+</div>
+<app-footer></app-footer>
