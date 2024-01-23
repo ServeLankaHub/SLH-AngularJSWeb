@@ -111,7 +111,6 @@
             <div class="col py-3">
                 <h1>Grama Niladhari Onboarding</h1>
                 <p>Fill this form to onboard the grama nildhari.</p>
-
                 <p>[Description]</p>
                 <div class="reg-form">
                     <form [formGroup]="onboardForm" (ngSubmit)="onBoardSumbit()">
@@ -121,41 +120,30 @@
                                 <input type="text" class="form-control" id="GN_ID" placeholder="Grama Niladhari ID" formControlName="GN_ID">
                                 <small *ngIf="onboardForm.controls['GN_ID'].dirty && onboardForm.hasError('required','GN_ID')">*Grama Niladhari ID is required</small>
                             </div>
-                            
-                            <!-- <div class="col">
-                                <label for="divisionId">Division ID</label>
-                                <input type="text" class="form-control" id="divisionId" placeholder="Division ID" formControlName="divisionId">
-                                <small *ngIf="onboardForm.controls['divisionId'].dirty && onboardForm.hasError('required','divisionId')">*Division ID is required</small>
-                            </div> -->
                         </div>
-                        
                         <div class="row">
                             <div class="col">
                                 <label for="fistName">First Name</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="firstName">
                                 <small *ngIf="onboardForm.controls['firstName'].dirty && onboardForm.hasError('required','firstName')">*First Name is required</small>
                             </div>
-                            
                             <div class="col">
                                 <label for="lastName">Last Name</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="Last Name" formControlName="lastName">
                                 <small *ngIf="onboardForm.controls['lastName'].dirty && onboardForm.hasError('required','lastName')">*Last Name is required</small>
                             </div>
                         </div>
-                        
                         <div class="row">
                             <div class="col">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
                                 <small *ngIf="onboardForm.controls['email'].dirty && onboardForm.hasError('required','email')">*Email is required</small>
                             </div>
-                            
                             <div class="col">
                                 <label for="address">Address</label>
                                 <input type="text" class="form-control" id="address" placeholder="Address" formControlName="address">
                                 <small *ngIf="onboardForm.controls['address'].dirty && onboardForm.hasError('required','address')">*Address is required</small>
                             </div>
-                            
                         </div>
                         <div class="row">
                             <div class="col">
@@ -188,14 +176,10 @@
                                 <button type="submit" class="btn-onboard btn">Onboard</button>
                                 <button type="button" class="btn-cancel btn">Cancel</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
             </div>
-
-
         </div>
     </div>
-
 </div>

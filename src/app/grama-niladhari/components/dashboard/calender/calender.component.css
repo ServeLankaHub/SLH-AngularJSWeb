@@ -6,9 +6,7 @@ h5{
   font-size: 20px;
   color: rgb(0,83,78);
 }
-
-
- .calendar-container{
+.calendar-container{
   justify-content: center;
   align-items: center;
   display: flex;

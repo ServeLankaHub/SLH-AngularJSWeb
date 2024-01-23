@@ -17,7 +17,6 @@ export class GnOnboardingComponent implements OnInit {
   ngOnInit(): void {
     this.onboardForm =  this.fb.group({
       GN_ID:['', Validators.required],
-      //divisionId:['', Validators.required],
       firstName:['', Validators.required],
       lastName:['', Validators.required],
       email:['', [Validators.required, Validators.email]],

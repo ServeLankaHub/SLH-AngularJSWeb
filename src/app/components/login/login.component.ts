@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
     
   }
   onLogin(){
-    console.log(this.loginForm.value);
     this.auth.login(this.loginForm.value).subscribe({
       next:(res)=>{
         this.toast.success({detail:"Success!",summary:res.message,duration:5000})

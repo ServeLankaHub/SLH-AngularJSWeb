@@ -1,8 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import flatpickr from 'flatpickr';
 
-
-
 @Component({
   selector: 'app-calender',
   templateUrl: './calender.component.html',

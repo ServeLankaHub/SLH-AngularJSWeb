@@ -19,19 +19,14 @@
                     <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
                 </div>
-                
                 <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</small>
                 <p>Forget Password?</p>
-               
-                 <div class="btn-container">
+                <div class="btn-container">
                     <div class="row row-cols-2">
                       <div class="col"> <button type="button" class="btn-cancel btn">Cancel</button></div>
                       <div class="col"><button type="submit" class="btn-login btn">Login</button></div>
-                      
                     </div>
                   </div>
-                
-               
             </form>
         </div>
     </div>
