@@ -32,10 +32,18 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets/icons",
+                "output": "/assets/icons/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-svg-core/styles.css",
+              "node_modules/flatpickr/dist/flatpickr.min.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -63,7 +71,13 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -96,15 +110,26 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets/icons",
+                "output": "/assets/icons/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "./node_modules/@fortawesome/fontawesome-svg-core/styles.css",
+              "node_modules/flatpickr/dist/flatpickr.min.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f375e438-2cfd-4262-a1e8-959570aae8c5"
   }
 }

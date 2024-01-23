@@ -1,0 +1,72 @@
+.btn-icon{
+    border: none;
+    border-color: rgba(0, 83, 78, 1);
+    margin-right: 10px;
+}
+.btn-user{
+    border-radius: 60px;
+    border-color: rgba(0, 83, 78, 1);
+    margin-right: 10px;
+    
+}
+.navbar {
+    border-bottom: 1px solid rgba(0, 83, 78, 1);
+    /* width: 100%; */
+   
+  }
+  .input-group{
+    width:350px;
+    height: 35px;
+    margin-bottom: 10px;
+ 
+  }
+h5{
+    font-size: 20px;
+    margin-left: 10px;
+}
+input[type=text],
+select,
+textarea {
+
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width:356px;
+    background-image: url("../../../../assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-color: rgba(0, 83, 78, 1);
+    
+}
+form ::placeholder {
+    font-size: 14px;
+    color: rgba(223, 223, 223, 1);
+}
+
+
+ /* For mobile phone */
+ @media only screen and  (max-width: 400px) {
+    .card{
+      width: 100%;
+    }
+    .col{
+        width:100%
+    }
+    .app-calender{
+        display:none;
+    }
+    .app-footer{
+    display:none;
+    }
+    .daily-feed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+

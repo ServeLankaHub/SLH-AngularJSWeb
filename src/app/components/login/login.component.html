@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/logo.png" alt="logo" width="30" height="24">
+        </a>
+    </div>
+</nav>
+<div class="login-card">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Login</h5>
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div>
+                    <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+                </div>
+                <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email is required</small>
+                <div>
+                    <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+                </div>
+                <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</small>
+                <p>Forget Password?</p>
+                <div class="btn-container">
+                    <div class="row row-cols-2">
+                      <div class="col"> <button type="button" class="btn-cancel btn">Cancel</button></div>
+                      <div class="col"><button type="submit" class="btn-login btn">Login</button></div>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>
