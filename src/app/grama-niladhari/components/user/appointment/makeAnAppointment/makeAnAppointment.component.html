@@ -54,19 +54,20 @@
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Contact Details</label>
-          <div class="input-group mb-3">
+          <div class="input-group">
             <button class="btn btn-outline-secondary" type="button">Phone</button>
             <button class="btn btn-outline-secondary" type="button">Email</button>
-            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+            <input type="text" class="form-control" placeholder="Enter the contact details" aria-label="Example text with two button addons" formControlName="contact">
           </div>
+          <small *ngIf="appointmentForm.controls['contact'].dirty && appointmentForm.hasError('required','contact')">*Contact details are required</small>
         </div>
        </div>
        <div class="row justify-content-center">
         <div class="col-3"></div>
          <div class="col-3">
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" rows="3" placeholder="Comment here"></textarea>
           </div>
          </div>
        </div>

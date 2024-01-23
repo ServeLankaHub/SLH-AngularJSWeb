@@ -17,7 +17,7 @@ export class MakeAnAppointmentComponent implements OnInit {
       reason:['', Validators.required],
       NIC:['', Validators.required],
       fullName:['', Validators.required],
-
+      contact:[ '', Validators.required],
     })
   }
 
