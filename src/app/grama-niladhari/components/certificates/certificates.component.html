@@ -6,11 +6,18 @@
   <app-navbar #navbar></app-navbar>
   <div class="container">
     <form [formGroup]="formGroup">
-      <app-input label="Email" inputId="email" formControlName="email" placeholder="Enter the email"></app-input>
+      <div class="col-sm-9">
+        <app-input label="Email" inputId="email" formControlName="email" placeholder="Enter the email"></app-input>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-4"><app-input label="Full Name" inputId="fullName" formControlName="fullName" placeholder="Enter the Full Name"></app-input></div>
+        <div class="col-6 col-sm-4"><app-input label="Gender" inputId="gender" formControlName="gender" placeholder="Enter the Gender"></app-input></div>
+        <div class="w-100 d-none d-md-block"></div>
+        <div class="col-6 col-sm-4"><app-input label="Address" inputId="address" formControlName="address" placeholder="Enter the Address"></app-input></div>
+        </div>
     </form>
-    
-   </div>
- </div>
+  </div>
+</div>
  
  
 
