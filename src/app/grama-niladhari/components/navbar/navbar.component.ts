@@ -21,9 +21,20 @@ export class NavbarComponent implements OnInit {
   faSearch = faSearch;
   faAngleDown=faAngleDown;
   faAlignLeft =faAlignLeft;
+
+  isSidebarVisible:boolean = true; // Initially, the sidebar is visible
   constructor() { }
 
   ngOnInit() {
   }
 
+  
+
+  toggleSidebar() {
+    console.log("toggle button clicking!")
+    console.log(this.isSidebarVisible);
+    this.isSidebarVisible = !this.isSidebarVisible;
+  }
+
+  
 }

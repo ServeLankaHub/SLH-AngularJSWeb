@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gn-dashboard.component.css']
 })
 export class GnDashboardComponent implements OnInit {
+isSidebarVisible: any;
 
   constructor() { }
 

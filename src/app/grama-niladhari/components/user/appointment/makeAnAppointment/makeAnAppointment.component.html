@@ -1,5 +1,11 @@
-<app-navbar></app-navbar>
-<h2>Make An Appointment</h2>
+<div class="dashboard">
+  <div class="sidebar" *ngIf="navbar.isSidebarVisible">
+    <app-sidebar></app-sidebar>
+  </div>
+ <div class="col">
+  <app-navbar #navbar></app-navbar>
+  <div class="container">
+    <h2>Make An Appointment</h2>
 <div class="content">
   <p>By filling out the form , you automatically make an appointment with a Grama Nildhari.A reminder wil be send to the specified contact</p>
 </div>
@@ -90,4 +96,12 @@
   </div>
 </form> 
 </div>
-<app-footer></app-footer>
+   </div>
+   <div class="footer">
+    <app-footer></app-footer>
+   </div>
+ </div>
+ 
+
+
+
