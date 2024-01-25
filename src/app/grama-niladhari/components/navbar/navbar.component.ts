@@ -7,7 +7,6 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -27,9 +26,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  
-
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
   }
