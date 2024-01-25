@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
+import { CertificatesComponent } from './components/certificates/certificates/certificates.component';
 
 
 
@@ -33,7 +34,8 @@ import { MakeAnAppointmentComponent } from './components/user/appointment/makeAn
     FooterComponent,
     SidebarComponent,
     GnDashboardComponent,
-    MakeAnAppointmentComponent
+    MakeAnAppointmentComponent,
+    CertificatesComponent
   ],
   imports: [
     CommonModule,
