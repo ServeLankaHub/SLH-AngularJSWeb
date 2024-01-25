@@ -4,7 +4,9 @@ import { GramaNiladhariComponent } from './grama-niladhari.component';
 import { GnOnboardingComponent } from './components/onboarding/gn-onboarding/gn-onboarding.component';
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
-import { CertificatesComponent } from './components/certificates/certificates/certificates.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
+
+
 
 const routes: Routes = [{ path: '', component: GramaNiladhariComponent },
 { path: 'onboarding', component: GnOnboardingComponent },

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { GramaNiladhariRoutingModule } from './grama-niladhari-routing.module';
 import { GramaNiladhariComponent } from './grama-niladhari.component';
 import { GnOnboardingComponent } from './components/onboarding/gn-onboarding/gn-onboarding.component';
@@ -18,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
-import { CertificatesComponent } from './components/certificates/certificates/certificates.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
+
 
 
 
@@ -36,6 +36,7 @@ import { CertificatesComponent } from './components/certificates/certificates/ce
     GnDashboardComponent,
     MakeAnAppointmentComponent,
     CertificatesComponent
+   
   ],
   imports: [
     CommonModule,
