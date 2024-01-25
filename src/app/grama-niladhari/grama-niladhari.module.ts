@@ -18,6 +18,7 @@ import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
+import { InputComponent } from './reusable/input/input.component';
 
 
 
@@ -35,7 +36,8 @@ import { CertificatesComponent } from './components/certificates/certificates.co
     SidebarComponent,
     GnDashboardComponent,
     MakeAnAppointmentComponent,
-    CertificatesComponent
+    CertificatesComponent,
+    InputComponent
    
   ],
   imports: [

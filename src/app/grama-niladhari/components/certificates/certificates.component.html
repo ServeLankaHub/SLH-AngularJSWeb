@@ -1,3 +1,18 @@
-<p>
-  certificates works!
-</p>
+<div class="dashboard">
+  <div class="sidebar" *ngIf="navbar.isSidebarVisible">
+    <app-sidebar></app-sidebar>
+  </div>
+ <div class="col">
+  <app-navbar #navbar></app-navbar>
+  <div class="container">
+    <form [formGroup]="formGroup">
+      <app-input label="Email" inputId="email" formControlName="email" placeholder="Enter the email"></app-input>
+    </form>
+    
+   </div>
+ </div>
+ 
+ 
+
+
+
