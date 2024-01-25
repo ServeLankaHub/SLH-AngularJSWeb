@@ -31,8 +31,6 @@ export class NavbarComponent implements OnInit {
   
 
   toggleSidebar() {
-    console.log("toggle button clicking!")
-    console.log(this.isSidebarVisible);
     this.isSidebarVisible = !this.isSidebarVisible;
   }
 
