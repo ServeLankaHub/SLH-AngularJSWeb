@@ -17,7 +17,12 @@ export class CertificatesComponent implements OnInit {
     email: new FormControl('', Validators.required),
     fullName: new FormControl('', Validators.required),
     gender: new FormControl('', Validators.required),
-    address: new FormControl('', Validators.required)
+    address: new FormControl('', Validators.required),
+    nic: new FormControl('', Validators.required),
+    age: new FormControl('', Validators.required),
+    civilstatus: new FormControl('', Validators.required),
+    wSL: new FormControl('', Validators.required),
+    religion: new FormControl('', Validators.required)
   })
 
 }
