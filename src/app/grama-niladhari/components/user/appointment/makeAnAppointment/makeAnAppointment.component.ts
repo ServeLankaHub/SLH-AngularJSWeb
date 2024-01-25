@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-makeAnAppointment',
@@ -8,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class MakeAnAppointmentComponent implements OnInit {
   appointmentForm! : FormGroup
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder, private router:Router) { }
 
   ngOnInit(): void{
     this.appointmentForm = this.fb.group({
@@ -19,6 +20,9 @@ export class MakeAnAppointmentComponent implements OnInit {
       fullName:['', Validators.required],
       contact:[ '', Validators.required],
     })
+  }
+  onCancel(){
+this.router.navigate(['grama-niladhari/dashboard'])
   }
 
 }

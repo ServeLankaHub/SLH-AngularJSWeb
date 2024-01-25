@@ -1,9 +1,9 @@
 <div class="dashboard">
-  <div class="sidebar">
+  <div class="sidebar" *ngIf="navbar.isSidebarVisible">
     <app-sidebar></app-sidebar>
   </div>
  <div class="col">
-  <app-navbar></app-navbar>
+  <app-navbar #navbar></app-navbar>
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
