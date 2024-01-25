@@ -10,7 +10,7 @@ import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
   faUser = faUser;
@@ -18,17 +18,16 @@ export class NavbarComponent implements OnInit {
   faMessage = faMessage;
   faGlobe = faGlobe;
   faSearch = faSearch;
-  faAngleDown=faAngleDown;
-  faAlignLeft =faAlignLeft;
+  faAngleDown = faAngleDown;
+  faAlignLeft = faAlignLeft;
 
-  isSidebarVisible:boolean = true; // Initially, the sidebar is visible
-  constructor() { }
+  isSidebarVisible: boolean = true; // Initially, the sidebar is visible
 
-  ngOnInit() {
-  }
+  isSidebarVisible: boolean = true; // Initially, the sidebar is visible
+  constructor() {}
+
+  ngOnInit() {}
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
   }
-
-  
 }
