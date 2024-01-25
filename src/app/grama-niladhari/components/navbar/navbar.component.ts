@@ -23,10 +23,10 @@ export class NavbarComponent implements OnInit {
 
   isSidebarVisible: boolean = true; // Initially, the sidebar is visible
 
-  isSidebarVisible: boolean = true; // Initially, the sidebar is visible
   constructor() {}
 
   ngOnInit() {}
+  
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
   }
