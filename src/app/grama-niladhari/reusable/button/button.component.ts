@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ControlValueAccessorDirective } from '../directive/control-value-accessor.directive';
+
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent<T> extends ControlValueAccessorDirective<T> {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input() type = '';
+  @Input() btnName = '';
 }

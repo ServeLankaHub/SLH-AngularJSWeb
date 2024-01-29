@@ -21,6 +21,7 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { InputComponent } from './reusable/input/input.component';
 import { SelectInputComponent } from './reusable/select-input/select-input.component';
 import { FileInputComponent } from './reusable/file-input/file-input.component';
+import { ButtonComponent } from './reusable/button/button.component';
 
 
 
@@ -41,7 +42,8 @@ import { FileInputComponent } from './reusable/file-input/file-input.component';
     CertificatesComponent,
     InputComponent,
     SelectInputComponent,
-    FileInputComponent
+    FileInputComponent,
+    ButtonComponent
    
   ],
   imports: [

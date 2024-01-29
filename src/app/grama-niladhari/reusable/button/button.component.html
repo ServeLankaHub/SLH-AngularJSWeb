@@ -1,3 +1,3 @@
-<p>
-  button works!
-</p>
+<div *ngIf="control">
+  <button class="button" [type]="type" [formControl]="control" *ngIf="btnName">{{btnName}}</button>
+</div>
