@@ -1,8 +1,44 @@
 .dashboard{
     display:flex;
+    height: 1280px;
 }
 .container{
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 80px;
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h5{
+    font-size: 16px;
+    color: rgb(0, 83, 78, 1);
+}
+h2{
+    font-size: 24px;
+    color: rgb(0, 83, 78, 1) ;
+}
+.sidebar {
+    min-height: 100%;
+}
+.btn-submit {
+    background-color: rgba(0, 83, 78, 1);
+    color: white;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.btn-cancel {
+    margin-top: 6px;
+    color: rgba(0, 83, 78, 1);
+    font-size: 14px;
+    border-color: rgba(0, 83, 78, 1);
+    margin-bottom: 6px;
+    margin-right: 40px;
+}
+.btn-container{
+    margin-top: 40px;
+  
 }

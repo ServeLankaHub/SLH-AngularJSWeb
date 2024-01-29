@@ -1,30 +1,98 @@
-<div class="dashboard">
+<div class="dashboard"> 
   <div class="sidebar" *ngIf="navbar.isSidebarVisible">
     <app-sidebar></app-sidebar>
   </div>
  <div class="col">
   <app-navbar #navbar></app-navbar>
+ 
   <div class="container">
+    <h2>Issue of Certificate</h2>
     <form [formGroup]="formGroup">
-      <div class="col-sm-9">
-        <app-input label="Email" inputId="email" formControlName="email" placeholder="Enter the email"></app-input>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-4"><app-input label="National Identity Card No" inputId="nic" formControlName="nic" placeholder="Enter the National Identity Card No"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Full Name" inputId="fullName" formControlName="fullName" placeholder="Enter the Full Name"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Address" inputId="address" formControlName="address" placeholder="Enter the Address"></app-input></div>
-        <div class="w-100 d-none d-md-block"></div>
-        <div class="col-6 col-sm-4"><app-input label="Gender" inputId="gender" formControlName="gender" placeholder="Enter the Gender"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Age" inputId="age" formControlName="age" placeholder="Enter the Age"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Civil Status" inputId="civilstatus" formControlName="civilstatus" placeholder="Enter the Civil Status"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Whether Sri Lankan?" inputId="wSL" formControlName="wSL" placeholder="Select Options"></app-input></div>
-        <div class="col-6 col-sm-4"><app-input label="Religion" inputId="religion" formControlName="religion" placeholder="Select Options"></app-input></div>
+      
+        <div class="row">
+          <div class="col-sm-9">
+            <app-select-input value1="1" value2="2" value3="3" label="Certificate Type" selectId="certificateType" formControlName="certificateType"></app-select-input>
+          </div>
+         
         </div>
-    </form>
+        <div class="row">
+          <div class="col-sm-4">
+            <app-select-input value1="1" value2="2" value3="3" label="District and Divisional Secretary’s Division" selectId="division" formControlName="division"></app-select-input>
+          </div>
+          <div class="col-sm-4">
+            <app-select-input value1="1" value2="2" value3="3" label="Grama Niladhari Division and Number" selectId="divisionId" formControlName="divisionId"></app-select-input>
+          </div>
+        </div>
+        <h5>Information About Applicant</h5>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="National Identity Card No" inputId="nic" formControlName="nic" placeholder="Enter the National Identity Card No"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Full Name" inputId="fullName" formControlName="fullName" placeholder="Enter the Full Name"></app-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Address" inputId="address" formControlName="address" placeholder="Enter the Address"></app-input></div>
+            <div class="col-6 col-sm-4"><app-select-input value1="Male" value2="Female" label="Gender" selectId="gender" formControlName="gender"></app-select-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Age" inputId="age" formControlName="age" placeholder="Enter the Age"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Civil Status" inputId="civilstatus" formControlName="civilstatus" placeholder="Enter the Civil Status"></app-input></div>
+          </div>
+           <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Whether Sri Lankan?" inputId="wSL" formControlName="wSL" placeholder="Select Options"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Religion" inputId="religion" formControlName="religion" placeholder="Select Options"></app-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Occupation" inputId="occupation" formControlName="occupation" placeholder="Enter your occupation"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Periods of the residence of the village" inputId="periods" formControlName="periods" placeholder="Select Options"></app-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Number of Electoral Register and Particulars of Registration" inputId="electrol" formControlName="electrol" placeholder="Select Options"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Name and Address of the father" inputId="fatherDetails" formControlName="fatherDetails" placeholder="Name and Address of the father"></app-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Purpose for which the certificate is required" inputId="purpose" formControlName="purpose" placeholder="Purpose for which the certificate is required"></app-input></div>
+           
+          </div>
+          <h5>Other Information</h5>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Periods of the residence in the Grama Niladhari Division" inputId="periodsOfResidence" formControlName="periodsOfResidence" placeholder="Periods of the residence in the Grama Niladhari Division"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="Nature of other evidences in proof of the period of residence" inputId="proof" formControlName="proof" placeholder="Nature of other evidences in proof of the period of residence"></app-input></div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4"><app-input label="Whether the Applicant has been convicted by a Court of Law" inputId="law" formControlName="law" placeholder="Whether the Applicant has been convicted by a Court of Law?"></app-input></div>
+            <div class="col-6 col-sm-4"><app-input label="His/Her Charcter" inputId="character" formControlName="character" placeholder="His/Her Charcter"></app-input></div>
+          </div>
+         <div class="row">
+            <div class="col-sm-9">
+              <app-input label="Whether he/she has taken an interest in public activities social service work, Community Work etc.? " inputId="sociable" formControlName="sociable" placeholder="His/Her Charcter"></app-input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              <app-input label="Remarks" inputId="remarks" formControlName="remarks" placeholder="Remarks"></app-input>
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <app-file-input id="gnSign" type="file" formControlName="gnSign" label="Upload Grama Niladhari E-Signature"></app-file-input>
+            </div>
+            <div class="col-6 col-sm-4">
+              <app-file-input id="applicantSign" formControlName="applicantSign" label="Applicant E-Signature"></app-file-input>
+            </div>
+           
+          </div>
+          
+            <div class="btn-container">
+             <button type="button" class="btn-cancel btn">Cancel</button>
+             <button type="submit" class="btn-submit btn">Submit</button>
+            </div>
+        </form>
+      </div>
   </div>
 </div>
- 
- 
+
+
+
 
 
 

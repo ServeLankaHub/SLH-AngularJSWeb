@@ -1,7 +1,5 @@
-<form>
+
   <div class="form-group" *ngIf="control">
     <label [for]="inputId" *ngIf="label">{{label}}</label>
     <input  [type]="type" class="form-control" [id]="inputId" aria-describedby="emailHelp" [placeholder]="placeholder" [formControl]="control">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
-</form>
