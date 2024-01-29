@@ -21,4 +21,5 @@ export class FileInputComponent<T> extends ControlValueAccessorDirective<T> {
   @Input() type:InputType = 'file';
   @Input() label ='';
 
+
 }
