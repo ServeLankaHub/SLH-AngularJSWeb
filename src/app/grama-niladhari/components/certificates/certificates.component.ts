@@ -16,6 +16,7 @@ export class CertificatesComponent implements OnInit {
   formGroup = new FormGroup({
     certificateType: new FormControl('', Validators.required),
     division: new FormControl('', Validators.required),
+    duration: new FormControl('', Validators.required),
     divisionId: new FormControl('', Validators.required),
     fullName: new FormControl('', Validators.required),
     gender: new FormControl('', Validators.required),

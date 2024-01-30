@@ -22,6 +22,7 @@ import { InputComponent } from './reusable/input/input.component';
 import { SelectInputComponent } from './reusable/select-input/select-input.component';
 import { FileInputComponent } from './reusable/file-input/file-input.component';
 import { ButtonComponent } from './reusable/button/button.component';
+import { CheckBoxComponent } from './reusable/check-box/check-box.component';
 
 
 
@@ -43,7 +44,8 @@ import { ButtonComponent } from './reusable/button/button.component';
     InputComponent,
     SelectInputComponent,
     FileInputComponent,
-    ButtonComponent
+    ButtonComponent,
+    CheckBoxComponent
    
   ],
   imports: [
