@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { GramaNiladhariRoutingModule } from './grama-niladhari-routing.module';
 import { GramaNiladhariComponent } from './grama-niladhari.component';
 import { GnOnboardingComponent } from './components/onboarding/gn-onboarding/gn-onboarding.component';
@@ -18,6 +17,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar/sidebar.component';
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
+import { InputComponent } from './reusable/input/input.component';
+import { SelectInputComponent } from './reusable/select-input/select-input.component';
+import { FileInputComponent } from './reusable/file-input/file-input.component';
+import { ButtonComponent } from './reusable/button/button.component';
+import { CheckBoxComponent } from './reusable/check-box/check-box.component';
+
 
 
 
@@ -33,7 +39,14 @@ import { MakeAnAppointmentComponent } from './components/user/appointment/makeAn
     FooterComponent,
     SidebarComponent,
     GnDashboardComponent,
-    MakeAnAppointmentComponent
+    MakeAnAppointmentComponent,
+    CertificatesComponent,
+    InputComponent,
+    SelectInputComponent,
+    FileInputComponent,
+    ButtonComponent,
+    CheckBoxComponent
+   
   ],
   imports: [
     CommonModule,

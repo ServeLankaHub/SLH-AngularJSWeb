@@ -1,0 +1,4 @@
+<div class="mb-3" *ngIf="control">
+  <label [for]="id" class="form-label" *ngIf="label">{{label}}</label>
+  <input class="form-control" [type]="type" [id]="id" [formControl]="control">
+</div>

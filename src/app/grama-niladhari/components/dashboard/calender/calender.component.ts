@@ -19,6 +19,5 @@ export class CalenderComponent implements AfterViewInit {
         inline:true
       });
   }
-
-  }
+}
 }
