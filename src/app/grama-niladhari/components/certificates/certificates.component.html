@@ -4,18 +4,15 @@
   </div>
  <div class="col">
   <app-navbar #navbar></app-navbar>
- 
-  <div class="container">
-    <h2>Issue of Certificate</h2>
+    <div class="container">
+      <h2>Issue of Certificate</h2>
     <form [formGroup]="formGroup">
-      
-        <div class="row">
+      <div class="row">
           <div class="col-sm-9">
             <app-select-input value1="1" value2="2" value3="3" label="Certificate Type" selectId="certificateType" formControlName="certificateType"></app-select-input>
           </div>
-         
-        </div>
-        <div class="row">
+          </div>
+      <div class="row">
           <div class="col-sm-4">
             <div class="row row-cols-2">
               <div class="col"><app-select-input value1="1" value2="2" value3="3" label="District" selectId="district" formControlName="district"></app-select-input></div>
@@ -28,7 +25,6 @@
                 <app-select-input value1="1" value2="2" value3="3" label="Grama Niladhari Division and Number" selectId="divisionId" formControlName="divisionId"></app-select-input>
               </div>
             </div>
-           
           </div>
         </div>
         <div class="row">
@@ -68,7 +64,6 @@
           </div>
           <div class="row">
             <div class="col-6 col-sm-4"><app-input label="Purpose for which the certificate is required" inputId="purpose" formControlName="purpose" placeholder="Purpose for which the certificate is required"></app-input></div>
-           
           </div>
           <h5>Other Information</h5>
           <div class="row">
@@ -88,8 +83,7 @@
             <div class="col-sm-9">
               <app-input label="Remarks" inputId="remarks" formControlName="remarks" placeholder="Remarks"></app-input>
             </div>
-           
-          </div>
+            </div>
           <div class="row">
             <div class="col-6 col-sm-4">
               <app-file-input id="gnSign" type="file" formControlName="gnSign" label="Upload Grama Niladhari E-Signature"></app-file-input>
@@ -97,15 +91,12 @@
             <div class="col-6 col-sm-4">
               <app-file-input id="applicantSign" formControlName="applicantSign" label="Applicant E-Signature"></app-file-input>
             </div>
-           
           </div>
-          
-            <div class="btn-container">
+          <div class="btn-container">
               <app-button type="button" btnName="Cancel"></app-button><span>
                 <app-button type="submit" btnName="Generate Certificate"></app-button>
               </span>
-              
-            </div>
+          </div>
         </form>
       </div>
   </div>
