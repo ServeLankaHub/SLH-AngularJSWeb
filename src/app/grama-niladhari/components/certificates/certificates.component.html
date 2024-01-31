@@ -17,10 +17,18 @@
         </div>
         <div class="row">
           <div class="col-sm-4">
-            <app-select-input value1="1" value2="2" value3="3" label="District and Divisional Secretary’s Division" selectId="division" formControlName="division"></app-select-input>
+            <div class="row row-cols-2">
+              <div class="col"><app-select-input value1="1" value2="2" value3="3" label="District" selectId="district" formControlName="district"></app-select-input></div>
+              <div class="col"><app-select-input value1="1" value2="2" value3="3" label="Division" selectId="division" formControlName="division"></app-select-input></div>
+            </div>
           </div>
           <div class="col-sm-4">
-            <app-select-input value1="1" value2="2" value3="3" label="Grama Niladhari Division and Number" selectId="divisionId" formControlName="divisionId"></app-select-input>
+            <div class="row">
+              <div class="col">
+                <app-select-input value1="1" value2="2" value3="3" label="Grama Niladhari Division and Number" selectId="divisionId" formControlName="divisionId"></app-select-input>
+              </div>
+            </div>
+           
           </div>
         </div>
         <div class="row">
