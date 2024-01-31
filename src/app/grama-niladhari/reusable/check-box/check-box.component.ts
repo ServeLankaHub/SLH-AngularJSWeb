@@ -2,8 +2,6 @@ import { Component, Input, OnInit, forwardRef } from '@angular/core';
 import { ControlValueAccessorDirective } from '../directive/control-value-accessor.directive';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
-
-
 type InputType = 'checkbox'
 @Component({
   selector: 'app-check-box',
@@ -23,7 +21,5 @@ export class CheckBoxComponent<T> extends ControlValueAccessorDirective<T> {
   @Input() flexCheckChecked = '';
   @Input() value = '';
   @Input() checkbox:InputType = 'checkbox';
-
-  
 
 }

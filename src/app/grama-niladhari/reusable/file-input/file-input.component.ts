@@ -16,10 +16,8 @@ type InputType = 'file'
   ]
 })
 export class FileInputComponent<T> extends ControlValueAccessorDirective<T> {
-
   @Input() id = '';
   @Input() type:InputType = 'file';
   @Input() label ='';
-
 
 }
