@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {genderOptions} from '../../select.input.options/options';
+import {genderOptions,durationOptions} from '../../select.input.options/options';
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
@@ -8,6 +8,7 @@ import {genderOptions} from '../../select.input.options/options';
 })
 export class CertificatesComponent implements OnInit {
   genderOptions = genderOptions;
+  durationOptions = durationOptions;
   constructor() { }
 
   ngOnInit() {
