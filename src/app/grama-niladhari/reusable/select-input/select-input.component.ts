@@ -17,8 +17,6 @@ import { ControlValueAccessorDirective } from '../directive/control-value-access
 export class SelectInputComponent<T> extends ControlValueAccessorDirective<T> {
   @Input() selectId = '';
   @Input() label='';
-  @Input() value1 = '';
-  @Input() value2 = '';
-  @Input() value3 = '';
+  @Input() select: { value: string; options: string }[] = [];
 
 }

@@ -44,7 +44,7 @@
           </div>
           <div class="row">
             <div class="col-6 col-sm-4"><app-input label="Address" inputId="address" formControlName="address" placeholder="Enter the Address"></app-input></div>
-            <div class="col-6 col-sm-4"><app-select-input value1="Male" value2="Female" label="Gender" selectId="gender" formControlName="gender"></app-select-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="genderOptions" label="Gender" selectId="gender" formControlName="gender"></app-select-input></div>
           </div>
           <div class="row">
             <div class="col-6 col-sm-4"><app-input label="Age" inputId="age" formControlName="age" placeholder="Enter the Age"></app-input></div>
