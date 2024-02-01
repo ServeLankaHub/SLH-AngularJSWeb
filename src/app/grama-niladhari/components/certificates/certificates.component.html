@@ -9,7 +9,7 @@
     <form [formGroup]="formGroup">
       <div class="row">
           <div class="col-sm-9">
-            <app-select-input value1="1" value2="2" value3="3" label="Certificate Type" selectId="certificateType" formControlName="certificateType"></app-select-input>
+            <app-select-input [select]="certificateType" label="Certificate Type" selectId="certificateType" formControlName="certificateType"></app-select-input>
           </div>
           </div>
       <div class="row">
@@ -71,12 +71,12 @@
             <div class="col-6 col-sm-4"><app-input label="Nature of other evidences in proof of the period of residence" inputId="proof" formControlName="proof" placeholder="Nature of other evidences in proof of the period of residence"></app-input></div>
           </div>
           <div class="row">
-            <div class="col-6 col-sm-4"><app-input label="Whether the Applicant has been convicted by a Court of Law" inputId="law" formControlName="law" placeholder="Whether the Applicant has been convicted by a Court of Law?"></app-input></div>
-            <div class="col-6 col-sm-4"><app-input label="His/Her Charcter" inputId="character" formControlName="character" placeholder="His/Her Charcter"></app-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="lawOptions" label="Whether the Applicant has been convicted by a Court of Law" inputId="law" formControlName="law" placeholder="Whether the Applicant has been convicted by a Court of Law?"></app-select-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="characterOptions" label="His/Her Charcter" inputId="character" formControlName="character" placeholder="His/Her Charcter"></app-select-input></div>
           </div>
          <div class="row">
             <div class="col-sm-9">
-              <app-input label="Whether he/she has taken an interest in public activities social service work, Community Work etc.? " inputId="sociable" formControlName="sociable" placeholder="His/Her Charcter"></app-input>
+              <app-select-input [select]="sociableOptions" label="Whether he/she has taken an interest in public activities social service work, Community Work etc.? " inputId="sociable" formControlName="sociable"></app-select-input>
             </div>
           </div>
           <div class="row">

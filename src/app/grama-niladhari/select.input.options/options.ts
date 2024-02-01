@@ -1,6 +1,6 @@
 export const genderOptions = [
-    { value: '1', options: 'Male' },
-    { value: '2', options: 'Female' },
+    { value: '1', options: 'MALE' },
+    { value: '2', options: 'FEMALE' },
 ]
 export const durationOptions = [
     { value: '1', options: 'Childhood' },
@@ -51,4 +51,21 @@ export const civilStatusOptions = [
     { value: '2', options: 'DIVORCED' },
     { value: '3', options: 'NOT_MARRIED' },
     { value: '4', options: 'WIDOWED' },
+]
+export const certificateType = [
+    { value: '1', options: 'Certificate on residence and character issued by the Grama Niladhari' },
+]
+export const characterOptions=[
+    { value: '1', options: 'Very Good' },
+    { value: '2', options: 'Good' },
+    { value: '3', options: 'Bad' },
+    { value: '4', options: 'Very Bad' },
+]
+export const sociableOptions=[
+    { value: '1', options: 'YES' },
+    { value: '2', options: 'NO' },
+]
+export const lawOptions=[
+    { value: '1', options: 'YES' },
+    { value: '2', options: 'NO' },
 ]
