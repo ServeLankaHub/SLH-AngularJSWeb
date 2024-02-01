@@ -15,7 +15,7 @@
       <div class="row">
           <div class="col-sm-4">
             <div class="row row-cols-2">
-              <div class="col"><app-select-input value1="1" value2="2" value3="3" label="District" selectId="district" formControlName="district"></app-select-input></div>
+              <div class="col"><app-select-input [select]="districtOptions" label="District" selectId="district" formControlName="district"></app-select-input></div>
               <div class="col"><app-select-input value1="1" value2="2" value3="3" label="Division" selectId="division" formControlName="division"></app-select-input></div>
             </div>
           </div>
@@ -48,11 +48,11 @@
           </div>
           <div class="row">
             <div class="col-6 col-sm-4"><app-input label="Age" inputId="age" formControlName="age" placeholder="Enter the Age"></app-input></div>
-            <div class="col-6 col-sm-4"><app-input label="Civil Status" inputId="civilstatus" formControlName="civilstatus" placeholder="Enter the Civil Status"></app-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="civilStatusOptions" label="Civil Status" inputId="civilstatus" formControlName="civilstatus"></app-select-input></div>
           </div>
            <div class="row">
-            <div class="col-6 col-sm-4"><app-input label="Whether Sri Lankan?" inputId="wSL" formControlName="wSL" placeholder="Select Options"></app-input></div>
-            <div class="col-6 col-sm-4"><app-input label="Religion" inputId="religion" formControlName="religion" placeholder="Select Options"></app-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="wSLOptions" label="Whether Sri Lankan?" inputId="wSL" formControlName="wSL"></app-select-input></div>
+            <div class="col-6 col-sm-4"><app-select-input [select]="religonOptions" label="Religion" inputId="religion" formControlName="religion"></app-select-input></div>
           </div>
           <div class="row">
             <div class="col-6 col-sm-4"><app-input label="Occupation" inputId="occupation" formControlName="occupation" placeholder="Enter your occupation"></app-input></div>

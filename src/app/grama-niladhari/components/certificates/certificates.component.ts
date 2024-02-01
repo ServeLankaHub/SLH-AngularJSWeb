@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {genderOptions,durationOptions} from '../../select.input.options/options';
+import {genderOptions,durationOptions,wSLOptions,religonOptions,districtOptions,civilStatusOptions} from '../../select.input.options/options';
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
@@ -9,6 +9,10 @@ import {genderOptions,durationOptions} from '../../select.input.options/options'
 export class CertificatesComponent implements OnInit {
   genderOptions = genderOptions;
   durationOptions = durationOptions;
+  wSLOptions = wSLOptions;
+  religonOptions = religonOptions;
+  districtOptions = districtOptions;
+  civilStatusOptions = civilStatusOptions;
   constructor() { }
 
   ngOnInit() {
