@@ -18,6 +18,7 @@ import {genderOptions,
   styleUrls: ['./certificates.component.css']
 })
 export class CertificatesComponent implements OnInit {
+  isChecked: boolean = false;
   genderOptions = genderOptions;
   durationOptions = durationOptions;
   wSLOptions = wSLOptions;
@@ -62,5 +63,9 @@ export class CertificatesComponent implements OnInit {
     gnSign: new FormControl('', Validators.required),
     applicantSign: new FormControl('', Validators.required)
   })
+
+  handleCheckBoxChange(event: any) {
+    this.isChecked = event.target.checked;
+  }
 
 }

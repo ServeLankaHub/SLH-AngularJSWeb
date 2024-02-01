@@ -29,10 +29,10 @@
         </div>
         <div class="row">
          <div class="col-sm-4">
-          <app-check-box label="Whether applicant is personally known to the Grama Niladhari?"></app-check-box>
+          <app-check-box (change)="handleCheckBoxChange($event)" label="Whether applicant is personally known to the Grama Niladhari?"></app-check-box>
           </div>
         </div>
-        <div class="row">
+        <div class="row" *ngIf="isChecked">
           <div class="col-sm-4">
             <app-select-input [select]="durationOptions" label="If so, since when?" selectId="duration" formControlName="duration"></app-select-input>
            </div>
