@@ -11,6 +11,7 @@ import {genderOptions,
         sociableOptions,
         lawOptions,
         } from '../../select.input.options/options';
+
 @Component({
   selector: 'app-certificates',
   templateUrl: './certificates.component.html',
@@ -27,6 +28,7 @@ export class CertificatesComponent implements OnInit {
   characterOptions = characterOptions;
   sociableOptions = sociableOptions;
   lawOptions = lawOptions;
+
   constructor() { }
 
   ngOnInit() {
