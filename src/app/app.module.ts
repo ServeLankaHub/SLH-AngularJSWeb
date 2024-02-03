@@ -8,10 +8,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgToastModule } from 'ng-angular-popup';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -19,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     NgToastModule,
     BrowserAnimationsModule,
+  
     
   ],
   providers: [

@@ -45,7 +45,7 @@ import { CheckBoxComponent } from './reusable/check-box/check-box.component';
     SelectInputComponent,
     FileInputComponent,
     ButtonComponent,
-    CheckBoxComponent
+    CheckBoxComponent,
    
   ],
   imports: [
@@ -56,9 +56,7 @@ import { CheckBoxComponent } from './reusable/check-box/check-box.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
-   
-    
-  ]
+  ],
 })
 export class GramaNiladhariModule { 
   

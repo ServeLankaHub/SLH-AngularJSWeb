@@ -69,3 +69,15 @@ export const lawOptions=[
     { value: '1', options: 'YES' },
     { value: '2', options: 'NO' },
 ]
+export const divisionalSecretariatsDivOptions=[
+    { value: '1', options: 'Panadura' },
+    { value: '2', options: 'Kalutara' },
+]
+export const gnDivisionNameOptions=[
+    { value: '1', options: 'Melgama south' },
+    { value: '2', options: 'Rathnapura' },
+]
+export const gnDivisionNumberOptions=[
+    { value: '1', options: '703/B' },
+    { value: '2', options: '101' },
+]
