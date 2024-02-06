@@ -23,6 +23,8 @@ import { SelectInputComponent } from './reusable/select-input/select-input.compo
 import { FileInputComponent } from './reusable/file-input/file-input.component';
 import { ButtonComponent } from './reusable/button/button.component';
 import { CheckBoxComponent } from './reusable/check-box/check-box.component';
+import { GnDetailsTableComponent } from './components/admin/gnDetailsTable/gnDetailsTable.component';
+import { AdminDashboardComponent } from './components/admin/admin-dashboard/admin-dashboard.component';
 
 
 
@@ -46,6 +48,8 @@ import { CheckBoxComponent } from './reusable/check-box/check-box.component';
     FileInputComponent,
     ButtonComponent,
     CheckBoxComponent,
+    AdminDashboardComponent,
+    GnDetailsTableComponent
    
   ],
   imports: [
