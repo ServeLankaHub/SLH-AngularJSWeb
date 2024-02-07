@@ -41,8 +41,10 @@
             <td>0740365128</td>
             <td>Panadura</td>
             <td>02, March 1989</td>
-            <td></td>
-            <td></td>
+            <td>
+              <button type="button" class="btn btn-icon"> <fa-icon [icon]="faEdit" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon></button>
+            </td>
+            <td><button type="button" class="btn btn-icon"> <fa-icon [icon]="faTrash" [style.color]="' rgba(0, 83, 78, 1)'"></fa-icon></button></td>
           </tr>
         </tbody>
       </table>
@@ -52,16 +54,15 @@
     <div class="col">
       <!-- Example split danger button -->
 <div class="btn-group">
-  <button type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn">Entries</button>
+  <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+    <li><a class="dropdown-item" href="#">10</a></li>
+    <li><a class="dropdown-item" href="#">20</a></li>
+    <li><a class="dropdown-item" href="#">30</a></li>
+   
   </ul>
 </div>
     </div>
@@ -70,22 +71,18 @@
         <div class="col align-self-end">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-end">
-              
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
               </ul>
-    
           </nav>
         </div>
       </div>
-      
     </div>
   </div>
-  
-  </div>
+</div>
 
 
 
