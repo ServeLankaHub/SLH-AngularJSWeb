@@ -5,6 +5,7 @@ import { GnOnboardingComponent } from './components/onboarding/gn-onboarding/gn-
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
+import { AdminDashboardComponent } from './components/admin/admin-dashboard/admin-dashboard.component';
 
 
 
@@ -12,7 +13,8 @@ const routes: Routes = [{ path: '', component: GramaNiladhariComponent },
 { path: 'onboarding', component: GnOnboardingComponent },
 { path: 'dashboard', component:GnDashboardComponent},
 { path: 'appointment', component:MakeAnAppointmentComponent},
-{ path: 'certificates', component:CertificatesComponent}
+{ path: 'certificates', component:CertificatesComponent},
+{ path: 'admin-dashboard', component:AdminDashboardComponent}
 ];
 
 @NgModule({

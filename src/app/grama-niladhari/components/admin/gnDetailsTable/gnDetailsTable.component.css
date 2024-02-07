@@ -1,0 +1,12 @@
+button{
+    color:rgba(0, 83, 78, 1) ;
+    border-color: rgba(0, 83, 78, 1);
+}
+a{
+    color: rgba(0, 83, 78, 1);
+}
+.btn-icon{
+    border: none;
+    border-color: rgba(0, 83, 78, 1);
+    margin-right: 10px;
+}
