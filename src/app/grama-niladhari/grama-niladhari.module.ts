@@ -8,9 +8,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CalenderComponent } from './components/dashboard/calender/calender.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MatCardModule} from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatCardModule } from '@angular/material/card';
 import { AppoinmentsComponent } from './components/dashboard/appoinments/appoinments.component';
 import { DailyFeedComponent } from './components/dashboard/daily-feed/daily-feed.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,9 +23,8 @@ import { SelectInputComponent } from './reusable/select-input/select-input.compo
 import { FileInputComponent } from './reusable/file-input/file-input.component';
 import { ButtonComponent } from './reusable/button/button.component';
 import { CheckBoxComponent } from './reusable/check-box/check-box.component';
-
-
-
+import { DemographyComponent } from './components/demography/demography.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -46,7 +45,7 @@ import { CheckBoxComponent } from './reusable/check-box/check-box.component';
     FileInputComponent,
     ButtonComponent,
     CheckBoxComponent,
-   
+    DemographyComponent,
   ],
   imports: [
     CommonModule,
@@ -56,8 +55,7 @@ import { CheckBoxComponent } from './reusable/check-box/check-box.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
+    NgChartsModule,
   ],
 })
-export class GramaNiladhariModule { 
-  
-}
+export class GramaNiladhariModule {}

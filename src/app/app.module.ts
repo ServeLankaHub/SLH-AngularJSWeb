@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgToastModule } from 'ng-angular-popup';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     NgToastModule,
     BrowserAnimationsModule,
+    NgChartsModule,
   
     
   ],

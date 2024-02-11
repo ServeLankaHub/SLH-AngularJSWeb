@@ -5,18 +5,19 @@ import { GnOnboardingComponent } from './components/onboarding/gn-onboarding/gn-
 import { GnDashboardComponent } from './components/dashboard/gn-dashboard/gn-dashboard/gn-dashboard.component';
 import { MakeAnAppointmentComponent } from './components/user/appointment/makeAnAppointment/makeAnAppointment.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
+import { DemographyComponent } from './components/demography/demography.component';
 
-
-
-const routes: Routes = [{ path: '', component: GramaNiladhariComponent },
-{ path: 'onboarding', component: GnOnboardingComponent },
-{ path: 'dashboard', component:GnDashboardComponent},
-{ path: 'appointment', component:MakeAnAppointmentComponent},
-{ path: 'certificates', component:CertificatesComponent}
+const routes: Routes = [
+  { path: '', component: GramaNiladhariComponent },
+  { path: 'onboarding', component: GnOnboardingComponent },
+  { path: 'dashboard', component: GnDashboardComponent },
+  { path: 'appointment', component: MakeAnAppointmentComponent },
+  { path: 'certificates', component: CertificatesComponent },
+  { path: 'demography', component: DemographyComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class GramaNiladhariRoutingModule { }
+export class GramaNiladhariRoutingModule {}

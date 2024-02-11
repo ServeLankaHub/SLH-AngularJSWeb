@@ -1,0 +1,17 @@
+<div display="flex" class="row">
+  <div class="col">
+    <app-sidebar />
+  </div>
+  <div class="mainBody col-sm-9">
+    <h1 class="text-green">Demography</h1>
+    <div>
+      <!-- TODO: add a date range picker -->
+      <canvas baseChart width="800" height="400"
+      [type]="'line'"
+      [data]="lineChartData"
+      [options]="lineChartOptions"
+      [legend]="lineChartLegend">
+    </canvas>
+    </div>
+  </div>
+</div>
